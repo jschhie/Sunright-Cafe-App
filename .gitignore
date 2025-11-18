@@ -1,2 +1,6 @@
 *.pyc
 .DS_STORE
+demos/*
+venv/
+website/cafe_database.db
+*.db
