@@ -135,6 +135,12 @@ function addToCart(btn) {
         // save total price of cart
         let current_cart_total = document.getElementById("cart-total-price-label").innerHTML;
         sessionStorage.setItem("current_cart_total", current_cart_total);
+
+        // Conditionally auto-close modal once drink is added to cart via Bootstrap API 
+        const modalInstance = bootstrap.Modal.getInstance(modal_body_div.parentElement.parentElement);
+        if (modalInstance) {
+            modalInstance.hide();
+        } 
     }
 }
 
