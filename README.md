@@ -5,7 +5,7 @@
 ## Overview
 * Mobile-friendly cafe ordering system built with a Flask/Python backend
 * Customizable drink options, search filters, and business hours restrictions
-* (WIP) Admin dashboard for managing the cafe database 
+* Admin dashboard for managing the cafe database (WIP)
 * Hosted on PythonAnywhere at: https://sunrightcafe.pythonanywhere.com
 
 ## 🔖 Table of Contents
@@ -31,7 +31,7 @@
 ### Receipt
 <img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/receipt-1.png">
 
-### Admin Dashboard
+### Admin Dashboard (WIP)
 > (WIP) Admin access to CRUD dashboard to manage Drinks, Toppings, MilkTypes, Orders, and CustomDrinks
 <img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/admin-view-1.png">
 <img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/admin-view-3-edit.png">
