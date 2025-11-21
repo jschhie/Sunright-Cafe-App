@@ -73,7 +73,10 @@
     display: none;
 }
 
-
+/* == ADMIN VIEW BUTTONS == */
+#admin-nav a {
+    border: 1px black solid;
+}
 
 /* === MENU === */
 .desc-large, .desc-medium, .desc-small, .menu-price {
