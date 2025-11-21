@@ -42,7 +42,7 @@ def create_app():
     babel = Babel(app)
 
     # Add administrative views
-    admin = Admin(app, name='cafeOrderingSys', template_mode='bootstrap4')
+    admin = Admin(app, name='Cafe Ordering System', template_mode='bootstrap4')
     admin.add_view(ModelView(Drink, db.session))
     admin.add_view(ModelView(Topping, db.session))
     admin.add_view(ModelView(MilkType, db.session))
@@ -55,28 +55,14 @@ def create_app():
 
     basic_auth = BasicAuth(app)
 
-    # define admin_base_template variable
-    app.config['FLASK_ADMIN_BASE_TEMPLATE'] = 'admin/master.html'
-
-    @app.route('/admin/test')
-    @basic_auth.required
-    def testing_view():
-        orders = Order.query.all()
-        custom_drinks = CustomDrink.query.all()
-        print(orders)
-        print(custom_drinks)
-        return render_template('admin/test.html', orders=orders, custom_drinks=custom_drinks) 
-
-    @app.route('/admin')
+    @app.route('/admin/home/')
+    @app.route('/admin/')
     @basic_auth.required
     def admin_view():
-        return render_template('admin/index.html')
-        #orders = Order.query.all()
-        #custom_drinks = CustomDrink.query.all()
-        #print(orders)
-        #print(custom_drinks)
-        #return render_template('admin/test.html', orders=orders, custom_drinks=custom_drinks) 
-    
+        orders = Order.query.all()
+        custom_drinks = CustomDrink.query.all()
+        return render_template('admin/index.html', orders=orders, custom_drinks=custom_drinks) 
+
     return app
 
 
