@@ -33,11 +33,8 @@
 
 ### Admin Dashboard (WIP)
 > (WIP) Admin access to CRUD dashboard to manage Drinks, Toppings, MilkTypes, Orders, and CustomDrinks
-<img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/admin-view-1.png">
+<img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/Admin%20Home%20Page.png">
 <img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/admin-view-3-edit.png">
-
-> Admin access to sample summary of Orders and CustomDrinks
-<img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/admin-view-2-summary.png">
 
 <hr>
 
@@ -74,4 +71,4 @@ python3 main.py
 
 <p>Access the website at: http://127.0.0.1:5000/ via any web browser.</p>
 
-<p>Admin users can access the CRUD dashboard at: http://127.0.0.1:5000/admin (and http://127.0.0.1:5000/admin/test) after configuring credentials (username & password) in the <code>__init__.py</code> file.</p>
+<p>Admin users can access the CRUD dashboard at: http://127.0.0.1:5000/admin/home after configuring credentials (username & password) in the <code>__init__.py</code> file.</p>
