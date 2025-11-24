@@ -1,6 +1,8 @@
+website/__pycache__
 *.pyc
 .DS_STORE
 demos/*
 venv/
+.venv
 website/cafe_database.db
 *.db
