@@ -1,16 +1,33 @@
 # Cafe Ordering System
 
-> Flask, Python,  SQLAlchemy, HTML, CSS, Bootstrap, JavaScript, Jinja
+> - Full-stack cafe ordering system <br>
+> - **Live demo:** https://sunrightcafe.pythonanywhere.com
+
+---
+
+## Tech Stack 
+| Component | Tech Used |
+| :--- | :--- |
+| **Backend** | Python, Flask |
+| **Data** | SQLite, SQL, JSON |
+| **Frontend Logic** | JavaScript, Jinja Templating |
+| **UI/Styling** | Bootstrap |
+| **Deployment** | PythonAnywhere |
+
+---
 
 ## Overview
-* Mobile-friendly cafe ordering system built with a Flask/Python backend
+* Full-stack Flask cafe ordering system
 * Customizable drink options, search filters, and business hours restrictions
 * Admin dashboard for managing the cafe database (WIP)
-* Hosted on PythonAnywhere at: https://sunrightcafe.pythonanywhere.com
+
+---
 
 ## 🔖 Table of Contents
 * [Website Demo](https://github.com/jschhie/toast-tab-cafe/blob/main/README.md#website-demo)
 * [Running the Website Manually](https://github.com/jschhie/toast-tab-cafe/blob/main/README.md#running-the-site-manually)
+
+---
 
 ## Website Demo
 
@@ -36,7 +53,7 @@
 <img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/Admin%20Home%20Page.png">
 <img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/admin-view-3-edit.png">
 
-<hr>
+---
 
 ## Running the Site Manually
 1. Clone this repository:
