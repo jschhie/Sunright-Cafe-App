@@ -8,7 +8,8 @@ from flask_basicauth import BasicAuth
 
 from flask_babel import Babel
 
-from os import path
+from os import path, environ
+from dotenv import load_dotenv
 
 db = SQLAlchemy()
 DB_NAME = "cafe_database.db"
@@ -22,7 +23,13 @@ def page_not_found(e):
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = '88285146618c47c6abc24603791d7dfd' # enable sessions and flashed messages
+
+    # Enable sessions and flashed messages
+    load_dotenv()
+
+    # Fetch secret key from .env var (Default: placeholder string, if DNE)
+    app.config['SECRET_KEY'] = environ.get('FLASK_SECRET_KEY', 'dev-key-for-local-use-only')
+    
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 

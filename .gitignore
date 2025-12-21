@@ -4,5 +4,6 @@ website/__pycache__
 demos/*
 venv/
 .venv
+.env
 website/cafe_database.db
 *.db
