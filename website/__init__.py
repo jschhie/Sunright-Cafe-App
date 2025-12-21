@@ -56,9 +56,9 @@ def create_app():
     admin.add_view(ModelView(Order, db.session))
     admin.add_view(ModelView(CustomDrink, db.session))
 
-    # NOTE: CONFIGURE SECRET AUTH USERNAME AND PASSWORD 
-    app.config['BASIC_AUTH_USERNAME'] = 'SECRET_USERNAME_HERE'
-    app.config['BASIC_AUTH_PASSWORD'] = 'SECRET_PASSWORD_HERE'
+    # Fetch secret Flask Admin credentials from .env var
+    app.config['BASIC_AUTH_USERNAME'] = environ.get('FLASK_ADMIN_USERNAME', 'SECRET_USERNAME_HERE')
+    app.config['BASIC_AUTH_PASSWORD'] = environ.get('FLASK_ADMIN_PASSWORD', 'SECRET_PASSWORD_HERE')
 
     basic_auth = BasicAuth(app)
 
