@@ -56,17 +56,17 @@
 ---
 
 ## Running the Site Manually
-1. Clone this repository:
+### 1. Clone this repository:
 ```bash 
 git clone https://github.com/jschhie/toast-tab-cafe.git [folderNameHere]
 ```
 
-2. Navigate into the folder: 
+### 2. Navigate into the folder: 
 ```bash 
 cd [folderNameHere]
 ```
 
-3. Create and activate virtual environment (`venv`):
+### 3. Create and activate virtual environment (`venv`):
 > To isolate the project's dependencies
 
 ```bash
@@ -74,12 +74,25 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-4. Install the required packages:
+### 4. Install the required packages:
 ```bash
 pip3 install -r requirements.txt
 ```
 
-5. Run the Flask app:
+### 5. Configure environment variables
+#### 5a. Create a `.env` file in the root directory:
+```bash
+vim .env
+```
+
+#### 5b. Open the `.env` file and define the following:
+```
+FLASK_SECRET_KEY=random_secret_key_here
+FLASK_ADMIN_USERNAME=secret_admin_username_here
+FLASK_ADMIN_PASSWORD=secret_admin_password_here
+```
+
+### 6. Run the Flask app:
 ```bash
 python3 main.py
 ```
