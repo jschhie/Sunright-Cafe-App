@@ -1,6 +1,6 @@
-# Cafe Ordering System
+# Sunright Cafe | Full-Stack Ordering System 🧋 
 
-> - Full-stack cafe ordering system <br>
+> - Cafe ordering system, inspired by Toast Tab POS interface<br>
 > - **Live demo:** https://sunrightcafe.pythonanywhere.com
 
 ---
@@ -24,8 +24,8 @@
 ---
 
 ## 🔖 Table of Contents
-* [Website Demo](https://github.com/jschhie/toast-tab-cafe/blob/main/README.md#website-demo)
-* [Running the Website Manually](https://github.com/jschhie/toast-tab-cafe/blob/main/README.md#running-the-site-manually)
+* [Website Demo](https://github.com/jschhie/Sunright-Cafe-App/blob/main/README.md#website-demo)
+* [Running the Website Manually](https://github.com/jschhie/Sunright-Cafe-App/blob/main/README.md#running-the-site-manually)
 
 ---
 
@@ -33,32 +33,32 @@
 
 ### Cafe Menu
 > (work in progress)
-<img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/searchbar-1.png">
+<img src="https://github.com/jschhie/Sunright-Cafe-App/blob/main/demos/searchbar-1.png">
 
 ### Customize Drink 
 > Required: sweetness, ice level, and milk type
-<img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/updated-modal-1.png">
+<img src="https://github.com/jschhie/Sunright-Cafe-App/blob/main/demos/updated-modal-1.png">
 
 > Optional: toppings
-<img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/updated-modal-2.png">
+<img src="https://github.com/jschhie/Sunright-Cafe-App/blob/main/demos/updated-modal-2.png">
 
 ### Cart 
-<img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/updated-cart-2.png">
+<img src="https://github.com/jschhie/Sunright-Cafe-App/blob/main/demos/updated-cart-2.png">
 
 ### Receipt
-<img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/receipt-1.png">
+<img src="https://github.com/jschhie/Sunright-Cafe-App/blob/main/demos/receipt-1.png">
 
 ### Admin Dashboard (WIP)
 > (WIP) Admin access to CRUD dashboard to manage Drinks, Toppings, MilkTypes, Orders, and CustomDrinks
-<img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/Admin%20Home%20Page.png">
-<img src="https://github.com/jschhie/toast-tab-cafe/blob/main/demos/admin-view-3-edit.png">
+<img src="https://github.com/jschhie/Sunright-Cafe-App/blob/main/demos/Admin%20Home%20Page.png">
+<img src="https://github.com/jschhie/Sunright-Cafe-App/blob/main/demos/admin-view-3-edit.png">
 
 ---
 
 ## Running the Site Manually
 ### 1. Clone this repository:
 ```bash 
-git clone https://github.com/jschhie/toast-tab-cafe.git [folderNameHere]
+git clone https://github.com/jschhie/Sunright-Cafe-App.git [folderNameHere]
 ```
 
 ### 2. Navigate into the folder: 
