@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, Response
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import IntegrityError
 
@@ -54,13 +54,30 @@ def create_app():
 
     babel = Babel(app)
 
-    # Add administrative views
+    # Create secure version of Flask-Admin's ModelView
+    class SecureModelView(ModelView):
+        def is_accessible(self):
+            auth = request.authorization
+            if not auth or (auth.username != environ.get('FLASK_ADMIN_USERNAME') or 
+                            auth.password != environ.get('FLASK_ADMIN_PASSWORD')):
+                return False
+            return True
+
+        def inaccessible_callback(self, name, **kwargs):
+            # If not accessible: Prompt admin username & password
+            return Response(
+                '401: Could not verify your credentials.\n'
+                'Please login with proper credentials.', 401,
+                {'WWW-Authenticate': 'Basic realm="Login Required"'}
+            )
+
+    # Add admin CRUD views
     admin = Admin(app, name='Cafe Ordering System', template_mode='bootstrap4')
-    admin.add_view(ModelView(Drink, db.session))
-    admin.add_view(ModelView(Topping, db.session))
-    admin.add_view(ModelView(MilkType, db.session))
-    admin.add_view(ModelView(Order, db.session))
-    admin.add_view(ModelView(CustomDrink, db.session))
+    admin.add_view(SecureModelView(Drink, db.session))
+    admin.add_view(SecureModelView(Topping, db.session))
+    admin.add_view(SecureModelView(MilkType, db.session))
+    admin.add_view(SecureModelView(Order, db.session))
+    admin.add_view(SecureModelView(CustomDrink, db.session))
 
     # Fetch secret Flask Admin credentials from .env var
     app.config['BASIC_AUTH_USERNAME'] = environ.get('FLASK_ADMIN_USERNAME', 'SECRET_USERNAME_HERE')

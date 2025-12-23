@@ -19,7 +19,7 @@
 ## Overview
 * Full-stack Flask cafe ordering system
 * Customizable drink options, search filters, and business hours restrictions
-* Admin dashboard for managing the cafe database (WIP)
+* Admin dashboard for managing the cafe database
 
 ---
 
@@ -49,7 +49,7 @@
 <img src="https://github.com/jschhie/Sunright-Cafe-App/blob/main/demos/receipt-1.png">
 
 ### Admin Dashboard (WIP)
-> (WIP) Admin access to CRUD dashboard to manage Drinks, Toppings, MilkTypes, Orders, and CustomDrinks
+> Admin access to CRUD dashboard to manage Drinks, Toppings, MilkTypes, Orders, and CustomDrinks
 <img src="https://github.com/jschhie/Sunright-Cafe-App/blob/main/demos/Admin%20Home%20Page.png">
 <img src="https://github.com/jschhie/Sunright-Cafe-App/blob/main/demos/admin-view-3-edit.png">
 
