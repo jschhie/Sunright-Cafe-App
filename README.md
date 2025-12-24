@@ -100,4 +100,4 @@ python3 main.py
 
 <p>Access the website at: http://127.0.0.1:5000/ via any browser.</p>
 
-<p>Admin users can access the CRUD dashboard at: http://127.0.0.1:5000/admin/home after configuring credentials (username & password) in the <code>__init__.py</code>. See "Step 5" in above section.</p>
+<p>Admin users can access the CRUD dashboard at: http://127.0.0.1:5000/admin/home after configuring credentials (username & password) in the <code>__init__.py</code>. See "Step 5" in above section. </p>
