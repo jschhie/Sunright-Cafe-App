@@ -78,6 +78,11 @@
     border: 1px black solid;
 }
 
+#admin-actions-div a:hover {
+    background-color: black;
+    color: white;
+}
+
 /* === MENU === */
 .desc-large, .desc-medium, .desc-small, .menu-price {
     font-size: 0.9em;
