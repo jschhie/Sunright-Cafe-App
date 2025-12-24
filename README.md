@@ -32,7 +32,6 @@
 ## Website Demo
 
 ### Cafe Menu
-> (work in progress)
 <img src="https://github.com/jschhie/Sunright-Cafe-App/blob/main/demos/searchbar-1.png">
 
 ### Customize Drink 
@@ -48,7 +47,7 @@
 ### Receipt
 <img src="https://github.com/jschhie/Sunright-Cafe-App/blob/main/demos/receipt-1.png">
 
-### Admin Dashboard (WIP)
+### Admin Dashboard
 > Admin access to CRUD dashboard to manage Drinks, Toppings, MilkTypes, Orders, and CustomDrinks
 <img src="https://github.com/jschhie/Sunright-Cafe-App/blob/main/demos/Admin%20Home%20Page.png">
 <img src="https://github.com/jschhie/Sunright-Cafe-App/blob/main/demos/admin-view-3-edit.png">
@@ -97,8 +96,8 @@ FLASK_ADMIN_PASSWORD=secret_admin_password_here
 python3 main.py
 ```
 
-<p>The application will automatically generate a <code>cafe_database.db</code> file in the <code>website</code> directory.</p>
+<p>The application will automatically generate a <code>cafe_database.db</code> database in the <code>website</code> directory.</p>
 
-<p>Access the website at: http://127.0.0.1:5000/ via any web browser.</p>
+<p>Access the website at: http://127.0.0.1:5000/ via any browser.</p>
 
-<p>Admin users can access the CRUD dashboard at: http://127.0.0.1:5000/admin/home after configuring credentials (username & password) in the <code>__init__.py</code> file.</p>
+<p>Admin users can access the CRUD dashboard at: http://127.0.0.1:5000/admin/home after configuring credentials (username & password) in the <code>__init__.py</code>. See "Step 5" in above section.</p>
