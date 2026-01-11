@@ -7,7 +7,7 @@
     padding-left: 5%;
     padding-right: 5%;
     background-color: rgb(0,0,0,0.3);
-    background-image: url("https://live.staticflickr.com/65535/53896440548_797d337a72_o.jpg");
+    background-image: url("https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/cafe-banner.jpg?raw=true");
     background-size: 100vw 250px; /* mobile view */
     background-blend-mode: multiply; /* combine bg color and image together */
     color: white;
