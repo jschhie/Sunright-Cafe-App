@@ -132,33 +132,37 @@ def create_database(app):
                             "$5.65",
                             "$5.65"]
             
-            drink_thumbnail_urls = ["https://live.staticflickr.com/65535/53913164349_95672ab926_o.png",
-                                    "https://live.staticflickr.com/65535/53913257610_eba4cb8607_o.png",
-                                    "https://live.staticflickr.com/65535/53913257605_f5afb6fcaf_o.png",
-                                    "https://live.staticflickr.com/65535/53911926957_9c83e77b23_o.png",
-                                    "https://live.staticflickr.com/65535/53913164409_252825eafc_o.png",
-                                    "https://live.staticflickr.com/65535/53913257685_c0d70ebcc7_o.png",
-                                    "https://live.staticflickr.com/65535/53919021731_664a0692d0_o.png",
-                                    "https://live.staticflickr.com/65535/53919275158_26f70ae7cc_o.png",
-                                    "https://live.staticflickr.com/65535/53918138147_7a86bb75f1_o.png",
-                                    "https://live.staticflickr.com/65535/53919037936_dd8d5e60ee_o.png",
-                                    "https://live.staticflickr.com/65535/53919287313_6e57004789_o.png",
-                                    "https://live.staticflickr.com/65535/53918148427_8a887b7381_o.png",
-                                    "https://live.staticflickr.com/65535/53919486175_2a8d2fe616_o.png"]
+            drink_thumbnail_urls = [
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/jasmine-icon.png?raw=true",        # jasmine milk tea
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/brown-sugar-icon.png?raw=true",    # brown sugar milk tea
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/fruit-tea-icon.png?raw=true",      # sunright fruit tea
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/jasmine-cheese-icon.png?raw=true", # jasmine cheese foam
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/matcha-icon.png?raw=true",         # matcha
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/red-bean-icon.png?raw=true",       # red bean frosty
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/watermelon-icon.png?raw=true",     # watermelon lemonade
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/mango-icon.png?raw=true",          # mango jasmine tea
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/yakult-icon.png?raw=true",         # yakult strawberry
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/berry-icon.png?raw=true",          # strawberry frosty
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/matcha-red-icon.png?raw=true",      # matcha red bean frosty
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/white-peach-icon.png?raw=true",    # white peach oolong cheese
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/oolong-icon.png?raw=true"          # oolong cheese
+]
 
-            drink_img_urls = ["https://live.staticflickr.com/65535/53895278327_bef733e6a8_o.png",
-                              "https://live.staticflickr.com/65535/53896197936_71b9ec7ddc_o.png",
-                              "https://live.staticflickr.com/65535/53896620645_3487cee785_o.png",
-                              "https://live.staticflickr.com/65535/53896440573_d7fc19cc04_o.png",
-                              "https://live.staticflickr.com/65535/53895278337_1957dc54b1_o.png",
-                              "https://live.staticflickr.com/65535/53896620635_5d8029006a_o.png",
-                              "https://live.staticflickr.com/65535/53919374859_ac6c10cf84_o.png",
-                              "https://live.staticflickr.com/65535/53919025671_f192593efd_o.png",
-                              "https://live.staticflickr.com/65535/53919028051_80217b3fd0_o.png",
-                              "https://live.staticflickr.com/65535/53918143412_a68b2495a7_o.png",
-                              "https://live.staticflickr.com/65535/53919282788_187a5a5328_o.png",
-                              "https://live.staticflickr.com/65535/53918143407_55e739f41d_o.png",
-                              "https://live.staticflickr.com/65535/53919386619_3f3a2b8bb8_o.png"]
+            drink_img_urls = [
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/jasmine.png?raw=true",        # jasmine milk tea
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/brown-sugar.png?raw=true",    # brown sugar milk tea
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/fruit-tea.png?raw=true",      # sunright fruit tea
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/jasmine-cheese.png?raw=true", # jasmine cheese foam
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/matcha.png?raw=true",         # matcha
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/red-bean.png?raw=true",       # red bean frosty
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/watermelon.png?raw=true",     # watermelon lemonade
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/mango.png?raw=true",          # mango jasmine tea
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/yakult.png?raw=true",         # yakult strawberry
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/berry.png?raw=true",          # strawberry frosty
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/matcha-red.png?raw=true",     # matcha red bean frosty
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/white-peach.png?raw=true",    # white peach oolong cheese
+                "https://github.com/jschhie/Sunright-Cafe-App/blob/main/website/static/images/oolong.png?raw=true"          # oolong cheese
+]
             
             drink_desc = ["Jasmine green tea combined with our signature house milk",
                           "#1 customer favorite. We expertly brew Ceylon black tea then perfectly blend in our signature house milk, drizzle in freshly made brown sugar syrup and top it off with a scoop of our deliciously chewy brown sugar boba.",
